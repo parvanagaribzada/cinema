@@ -1,0 +1,172 @@
+/* ==========================================================================
+   Modern CSS Reset
+   ========================================================================== */
+
+/* 1. Box-sizing hər yerdə border-box olsun */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Default margin və padding-i sıfırla */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Mobil cihazlarda landscape rejimində şrift ölçüsünün avtomatik böyüməsinin qarşısını al */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* 4. İstifadəçi "reduced motion" istəmirsə, smooth scroll aktiv olsun */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+    scroll-behavior: smooth;
+  }
+}
+
+/* 5. Body üçün əsas dəyərlər */
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* 6. Media elementləri blok və responsive olsun */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+img,
+video {
+  height: auto;
+}
+
+/* 7. Form elementləri valideyndən şrifti miras alsın */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+}
+
+/* 8. Button-ların default görünüşünü təmizlə */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+/* 9. Textarea yalnız şaquli ölçülənsin */
+textarea {
+  resize: vertical;
+}
+
+/* 10. Uzun sözlər konteynerdən daşmasın */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 11. Başlıqlarda daha balanslı sətir bölgüsü, mətndə "tək qalan söz" problemi olmasın */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+/* 12. Siyahılardan marker-i yalnız class verilmiş siyahılarda sil
+   (semantik <ul>/<ol>-un default görünüşü qorunur) */
+ul[class],
+ol[class],
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* 13. Linklər */
+a {
+  color: inherit;
+  text-decoration-skip-ink: auto;
+}
+
+a:not([class]) {
+  text-decoration-thickness: max(0.08em, 1px);
+  text-underline-offset: 0.15em;
+}
+
+/* 14. Cədvəllər */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 15. Klaviatura ilə naviqasiya üçün görünən focus (accessibility) */
+:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* 16. hidden atributu həmişə işləsin */
+[hidden] {
+  display: none !important;
+}
+
+/* 17. Scroll ilə keçid edəndə anchor hədəfi sticky header altında qalmasın */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* 18. Stacking context — React/Next.js root üçün (vanilla layihədə zərəri yoxdur) */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* 19. Reduced motion istəyən istifadəçilər üçün animasiyaları söndür */
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
