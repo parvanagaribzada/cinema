@@ -3,12 +3,75 @@
   <head>
     <title>Neon Cinema</title>
     <meta name="description" content="Favorite cinema website"/>
-    <link rel="stylesheet" href="/css/reset.css"/>
-    <link rel="stylesheet" href="/css/main.css"/>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
   </head>
   <body>
-    <nav></nav>
+    <nav id="navbar">
+      <span class="logo-space">
+        <img src="assets/images/logo.png" alt="Neon Cinema Logo"/>
+      </span>
+      <menu>
+        <ul>
+          <li><a href="" class="active">Discover</a></li>
+          <li><a href="">Trending</a></li>
+          <li><a href="">Watchlist</a></li>
+          <li><a href="">Genres</a></li>
+        </ul>
+      </menu>
+      <div class="nav-side">
+       <input id="search" type="search" placeholder="Search" />
+       <span class="profile">
+       </span>
+      </div>
+    </nav>
     <main></main>
-    <footer></footer>
+    <footer>
+      <ul>
+        <li class="detail">
+          <img src="assets/images/logo.png" alt="Neon Cinema Logo" />
+          <p>Discover, track and rate movies. Built with React, TypeScript and the TMDB API.</p>
+          <div class="socials">
+            <a href="" target="_blank" class="link">GH</a>
+            <a href="" target="_blank" class="link">in</a>
+            <a href="" target="_blank" class="link">X</a>
+            <a href="" target="_blank" class="link">▶</a>
+          </div>
+        </li>
+        <li class="menu">
+          <ul>
+            <h6>Explore</h6>
+            <li><a href="">Discover</a></li>
+            <li><a href="">Trending</a></li>
+            <li><a href="">Watchlist</a></li>
+            <li><a href="">Genres</a></li>
+          </ul>
+          <ul>
+            <h6>Account</h6>
+            <li><a href="">Watchlist</a></li>
+            <li><a href="">Ratings</a></li>
+            <li><a href="">Settings</a></li>
+          </ul>
+           <ul>
+            <h6>Account</h6>
+            <li><a href="">Watchlist</a></li>
+            <li><a href="">Ratings</a></li>
+            <li><a href="">Settings</a></li>
+          </ul>
+          <div class="subscribe">
+            <h6>Weekly picks</h6>
+            <span>5 films worth your Friday night.</span>
+            <form>
+              <input type="email" placeholder="you@email.com"/>
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </li>
+      </ul>
+      <div class="bottom">
+        <span class="copyright">© 2026 CineScope · Designed & built by Parvana Garibzada</span>
+        <span class="description">This product uses the TMDB API but is not endorsed or certified by TMDB.</span>
+      </div>
+    </footer>
   </body>
 </html>

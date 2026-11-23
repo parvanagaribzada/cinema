@@ -1,0 +1,149 @@
+#navbar {
+  width: 100%;
+  max-width: 1440px;
+  min-height: 80px;
+  padding: 20px 64px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+menu {
+  width: fit-content;
+  height: fit-content;
+  margin: auto auto;
+}
+
+menu ul {
+  display: flex;
+  list-style: none;
+  gap: 36px;
+}
+
+menu ul li a {
+  color: #9A9AB5;
+  text-decoration: none;
+}
+
+menu ul li a:hover,
+menu ul li a.active {
+  color: #F4F4FA;
+}
+
+.nav-side {
+  display: flex;
+  gap: 16px;
+}
+
+.nav-side #search {
+  border: solid 1px #2A2A3D;
+  border-radius: 12px;
+  color: #9A9AB5;
+  height: 39px;
+  width: 100px;
+  padding: 10px 14px;
+  background-color: #12121C;
+  text-align: center;
+}
+
+.nav-side .profile {
+  display: block;
+  width: 36px;
+  height: 36px;
+  border: solid 2px #00F0FF;
+  border-radius: 50%;
+  background-color: #8B5CF6;
+}
+
+main {
+  width: 100%;
+  max-width: 1440px;
+  min-height: calc(100vh - 185px);
+}
+
+footer {
+  width: 100%;
+  max-width: 1440px;
+  background-color: #12121C;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 56px 64px 32px;
+  color: #9A9AB5;
+}
+
+footer ul {
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  gap: 64px;
+  width: 100%;
+  grid-template-columns: 440px 872px;
+}
+
+footer .bottom {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-top: solid 1px #2A2A3D;
+  min-height: 41px;
+}
+
+footer .detail {
+  max-width: 440px;
+  width: 100%;
+}
+
+footer .detail p {
+  max-width: 280px;
+  width: 100%;
+  margin: 14px 0;
+}
+
+footer .detail .socials {
+  display: flex;
+  gap: 10px;
+}
+
+footer .detail .socials a {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1B1B2A;
+  border-radius: 50%;
+  border: solid 1px #2A2A3D;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+footer .menu {
+  display: flex;
+  gap: 64px;
+}
+
+footer .menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+footer .menu h6 {
+  font-weight: 600;
+  color: #F4F4FA;
+  font-size: 15px;
+  text-align: left;
+}
+
+footer .menu ul li a {
+  text-decoration: none;
+  color: #9A9AB5;
+  font-size: 14px;
+  line-height: 22px;
+}
